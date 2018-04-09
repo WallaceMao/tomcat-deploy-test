@@ -8,13 +8,14 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>qywx.isv.access.web</artifactId>
     <packaging>war</packaging>
-    <name>web app for qiye weixin</name>
+    <name>teeeeeeeeest</name>
     <url>https://www.rishiqing.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
-        <dependency>
-            <groupId>com.rishiqing.qywx</groupId>
-            <artifactId>qywx.isv.access.service</artifactId>
-        </dependency>
 
         <!--spring-->
         <dependency>
@@ -91,16 +92,43 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>qywx.isv.access.web</finalName>
+        <finalName>tomcattest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                </configuration>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <!--<configuration>-->
+                    <!--<webResources>-->
+                        <!--<resource>-->
+                            <!--&lt;!&ndash;不使用maven管理的本地的lib&ndash;&gt;-->
+                            <!--<directory>lib/</directory>-->
+                            <!--<targetPath>WEB-INF/lib</targetPath>-->
+                            <!--<includes>-->
+                                <!--<include>**/*.jar</include>-->
+                            <!--</includes>-->
+                        <!--</resource>-->
+                    <!--</webResources>-->
+                <!--</configuration>-->
             </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>web-service-war</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<descriptors>-->
+                                <!--<descriptor>src/main/assembly/main.xml</descriptor>-->
+                                <!--&lt;!&ndash;<descriptor>src/main/assembly/job.xml</descriptor>&ndash;&gt;-->
+                            <!--</descriptors>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
