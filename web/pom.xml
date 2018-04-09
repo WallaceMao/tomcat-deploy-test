@@ -16,7 +16,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.rishiqing.qywx</groupId>
+            <artifactId>qywx.isv.access.dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
